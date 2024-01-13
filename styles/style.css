@@ -1,0 +1,114 @@
+/* Common */
+* {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.description {
+  color: #131313;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.btn {
+  width: 180px;
+  height: 64px;
+  border: none;
+  border-radius: 8px;
+  background: #ff900e;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/* Navigation */
+nav {
+  margin: 0 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+  gap: 30px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.nav-title {
+  color: #131313;
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+/* Header */
+header {
+  background-color: #ff900e1a;
+}
+.banner {
+  margin: 110px 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.banner-title {
+  color: #131313;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-description {
+  text-align: center;
+  padding: 0 20%;
+}
+.banner-img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+/* Medium Devisec */
+@media screen and (min-width:577px) and (max-width:992px){
+    nav {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+    .nav-title{
+        padding-top:20px;
+    }
+    nav > ul{
+        padding:0;
+    }
+    .banner{
+        margin-top:50px;
+        gap:30px;
+    }
+    .banner-description{
+        width:90%
+    }
+}
+/* Small Devices */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+  .nav-title{
+    padding-top:20px;
+  }
+  nav > ul{
+    padding:0;
+  }
+  .banner{
+    margin-top:50px;
+    gap:15px;
+  }
+  .banner-description{
+    /* padding:0 5%; */
+    width:90%;
+  }
+}
